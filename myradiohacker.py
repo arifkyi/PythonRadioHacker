@@ -11,7 +11,7 @@ def record():
 
 def play():
     # Run hackrf_transfer to play recorded data
-    subprocess.run(["hackrf_transfer", "-s", "8000000", "-f", "433918000", "-t", "origmyrec", "-a", "1", "-x", "47", "-b", "8000000"])
+    subprocess.run(["hackrf_transfer", "-s", "8000000", "-f", "433918000", "-t", "myrec", "-a", "1", "-x", "47", "-b", "8000000"])
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser()
